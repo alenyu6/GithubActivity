@@ -18,7 +18,7 @@ import java.util.List;
 public class GithubQuerier {
 
     private static final String BASE_URL = "https://api.github.com/users/";
-    private static final String ACCESS_TOKEN = "c40b08262ef6333fe52492c438180f82b1525885";
+    private static final String ACCESS_TOKEN = "";
 
     public static String eventsAsHTML(String user) throws IOException, ParseException {
         List<JSONObject> response = getRecentPushEvents(user,10);
@@ -36,7 +36,7 @@ public class GithubQuerier {
 
         //Parsing JSON
         StringBuilder sb = new StringBuilder();
-        String type = pushEvent.getString("type");
+        //String type = pushEvent.getString("type");
         String creationDate = pushEvent.getString("created_at");
         SimpleDateFormat inFormat = new SimpleDateFormat("yyyy-MM-dd'T'hh:mm:ss'Z'");
         SimpleDateFormat outFormat = new SimpleDateFormat("dd MMM, yyyy");
@@ -44,31 +44,50 @@ public class GithubQuerier {
         String formatted = outFormat.format(date);
 
         JSONObject payload = pushEvent.getJSONObject("payload");
-        String hash = payload.getString("head").substring(0,8);
+        JSONArray commits = payload.getJSONArray("commits");
 
         //Header
+        sb.append("<div class=\"push-event\">");
         sb.append("<h3>");
-        sb.append(type);
+        sb.append("Push Event");
         sb.append("</h3>");
         // Add formatted date
-        sb.append("<div>");
-        sb.append(hash);
-        sb.append("</div>");
-
         sb.append("<div>");
         sb.append(" on ");
         sb.append(formatted);
         sb.append("</div>");
 
-        System.out.println(sb.toString());
+        sb.append(commitListAsHtml(commits));
 
         //Content
         // Add collapsible JSON textbox (don't worry about this for the homework; it's just a nice CSS thing I like)
         sb.append("<a data-toggle=\"collapse\" href=\"#event-" + id + "\">JSON</a>");
         sb.append("<div id=event-" + id + " class=\"collapse\" style=\"height: auto;\"> <pre>");
-        sb.append(pushEvent.toString());
+        sb.append(pushEvent.toString(4));
         sb.append("</pre> </div>");
 
+        sb.append("</div>");
+        return sb.toString();
+    }
+
+    private static String commitListAsHtml(JSONArray commitArr){
+        StringBuilder sb = new StringBuilder();
+        for(int i = 0; i < commitArr.length(); i++){
+            JSONObject commit = commitArr.getJSONObject(i);
+            sb.append(commitAsHTML(commit));
+        }
+        return sb.toString();
+    }
+
+    private static String commitAsHTML(JSONObject commit){
+        StringBuilder sb = new StringBuilder();
+        String sha = commit.getString("sha");
+        String msg = commit.getString("message");
+        sb.append("<div class=\"commit-list\">");
+            sb.append("<span> <b>→ </b> </span>");
+            sb.append("<span class=\"sha\">" + sha + "</span>");
+            sb.append("<span class=\"message\">" + msg + "</span>");
+        sb.append("</div>");
         return sb.toString();
     }
 

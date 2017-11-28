@@ -24,7 +24,7 @@
                value="<%= request.getParameter("user_name") == null ? "" : request.getParameter("user_name")%>">
       </div>
       <%String user=request.getParameter("user_name"); %>
-      <button type="submit" class="btn btn-default">
+      <button type="submit" class="btn btn-primary">
         <c:choose>
           <c:when test="${empty user}">
             Submit
