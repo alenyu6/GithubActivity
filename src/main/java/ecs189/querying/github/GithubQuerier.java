@@ -18,7 +18,7 @@ import java.util.List;
 public class GithubQuerier {
 
     private static final String BASE_URL = "https://api.github.com/users/";
-    private static final String ACCESS_TOKEN = "";
+    private static final String ACCESS_TOKEN = "ce1d6836d1d1ba3e5daac4aa5ead08b34158440b";
 
     public static String eventsAsHTML(String user) throws IOException, ParseException {
         List<JSONObject> response = getRecentPushEvents(user,10);
