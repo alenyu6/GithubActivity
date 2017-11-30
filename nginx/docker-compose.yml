@@ -1,6 +1,8 @@
 version: '2'
 services:
   activity:
+    ports:
+      - "8080"
     image: activity
 
   ng:
