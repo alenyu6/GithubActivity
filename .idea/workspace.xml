@@ -6,15 +6,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4fcce467-84d3-48ec-821d-a99f2fa2fd52" name="Default" comment="swap script updated">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/activity2.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/activity.xml" />
+    <list default="true" id="4fcce467-84d3-48ec-821d-a99f2fa2fd52" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/activity/activity.war" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/activity2/Dockerfile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/activity2/activity2.war" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hw4/builddockers.sh" afterPath="$PROJECT_DIR$/hw4/builddockers.sh" />
-      <change beforePath="$PROJECT_DIR$/hw4/doswap.sh" afterPath="$PROJECT_DIR$/hw4/doswap.sh" />
-      <change beforePath="$PROJECT_DIR$/hw4/nginx-rev/swap2.sh" afterPath="$PROJECT_DIR$/hw4/nginx-rev/swap2.sh" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,10 +33,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="doswap.sh" pinned="false" current-in-tab="true">
+      <file leaf-file-name="doswap.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hw4/doswap.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
+            <state relative-caret-position="144">
               <caret line="20" column="42" lean-forward="false" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
               <folding />
             </state>
@@ -80,7 +73,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/activity_old/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
@@ -884,7 +877,7 @@
       <workItem from="1512068901709" duration="273000" />
       <workItem from="1512069267299" duration="8726000" />
       <workItem from="1512181872393" duration="2800000" />
-      <workItem from="1512289330509" duration="57000" />
+      <workItem from="1512289330509" duration="219000" />
     </task>
     <task id="LOCAL-00001" summary="Reverted activity to base version">
       <created>1511918676318</created>
@@ -900,15 +893,28 @@
       <option name="project" value="LOCAL" />
       <updated>1511918726401</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="swap script updated">
+      <created>1512289412503</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1512289412503</updated>
+    </task>
+    <task id="LOCAL-00004" summary="old activity for swapping">
+      <created>1512289546712</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1512289546712</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82009000" />
+    <option name="totallyTimeSpent" value="82171000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1602" height="881" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -924,7 +930,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896462" sideWeight="0.49791232" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.230625" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.230625" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -991,7 +997,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Updated site to specification, will do styling later" />
     <MESSAGE value="Reverted activity to base version" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reverted activity to base version" />
+    <MESSAGE value="swap script updated" />
+    <MESSAGE value="old activity for swapping" />
+    <option name="LAST_COMMIT_MESSAGE" value="old activity for swapping" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1301,14 +1309,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/activity_old/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hw4/nginx-rev/swap1.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1327,8 +1327,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hw4/doswap.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
+        <state relative-caret-position="144">
           <caret line="20" column="42" lean-forward="false" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/activity_old/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
           <folding />
         </state>
       </provider>
