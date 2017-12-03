@@ -62,7 +62,7 @@ docker run -d --network $network_id -P --name $container_name $image_name
 # run correct swap image based on image
 echo "Executing swap script to update nginx config file on nginx container"
 proxy_id=$(docker ps -a | grep ecs189_proxy | sed -e 's/ .*$//')
-docker exec $proxy_id /bin/bash $swap_script
+sleep 2 && docker exec $proxy_id /bin/bash $swap_script
 
 #kill the container that has been swapped
 echo "Killing process $to_kill"
