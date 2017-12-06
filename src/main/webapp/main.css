@@ -1,17 +1,44 @@
+#activity{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+    color: #000000;
+}
+
 #core {
-    width: 80%;
+    font-family: 'Montserrat Alternates', sans-serif;
+    width: 55%;
     margin: 50px;
-    background-color: white;
-    padding: 50px;
-    border-radius: 4px;
+    background-color: #ffce8c;
+    padding: 40px;
+    border-radius: 40px;
+    margin: 0 auto;
+    background: rgba(199,180,215,.3);
+    text-align: center;
+    left: 50%;
+}
+#core button {
+    cursor: url(https://78.media.tumblr.com/avatar_4db852bd936b_64.png), auto;
+    background: url(https://weirdspace.dk/Sanrio/Graphics/Ducklings.jpg);
+    background-size: cover;
+    color: black;
+}
+
+#form-group {
+    text-align: center;
 }
 
 #user {
+    color: #ffce8c;
     width: 30%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 body{
-    background-color:#456684;
+    background: url(http://images1.fanpop.com/images/photos/2000000/Chococat-Wallpaper-chococat-2015107-1024-768.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .push-event{
