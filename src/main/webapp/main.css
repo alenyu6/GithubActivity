@@ -63,5 +63,6 @@ body{
 }
 
 pre {
-    width: 80%;
+    text-align: left;
+    width: 100%;
 }
